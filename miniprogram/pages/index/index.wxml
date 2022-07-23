@@ -1,0 +1,5 @@
+<view class="container full-center">
+  <button type="primary" bindtap="onClickCreate">创建我的二维码</button>
+  <button type="primary" bindtap="scanCode">扫码</button>
+  <button type="primary" disabled>我创建的二维码</button>
+</view>

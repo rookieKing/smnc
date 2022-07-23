@@ -1,0 +1,5 @@
+<view class="container full-center">
+  <button type="disabled" loading wx:if="{{!phoneNumber}}">读取中</button>
+  <button type="primary" bindtap="dial" wx:else>拨号 {{phoneNumber}}</button>
+  <button type="primary" bindtap="home">首页</button>
+</view>

@@ -1,0 +1,30 @@
+<view hidden="{{!edit}}">
+  <view class="container">
+    <form catchsubmit="formSubmit">
+      <label class="flex dl">
+        <view class="dt required">手机号</view>
+        <input name="phonenumber" placeholder="请输入手机号" value="{{phonenumber}}" bindinput="onInput" />
+      </label>
+      <label class="flex dl">
+        <view class="dt">姓名</view>
+        <input name="name" placeholder="请输入姓名" value="{{name}}" bindinput="onNameInput" />
+      </label>
+      <view class="flex dl">
+        <view class="dt">性别</view>
+        <radio-group name="sex" bindchange="onChange">
+          <label>
+            <radio value="1" checked />先生
+          </label>
+          <label>
+            <radio value="0" />女士
+          </label>
+        </radio-group>
+      </view>
+      <label class="flex dl">
+        <view class="dt">描述</view>
+        <textarea placeholder="请输入描述" name="text" value="{{text}}" />
+      </label>
+      <button type="primary" formType="submit">预览</button>
+    </form>
+  </view>
+</view>

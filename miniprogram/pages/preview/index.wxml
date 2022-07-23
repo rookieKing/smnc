@@ -1,0 +1,6 @@
+<view style="margin-bottom: 64px">
+  <wxml-to-canvas class="widget" width="{{windowWidth}}" height="{{windowWidth * 2}}"></wxml-to-canvas>
+</view>
+<view class="container fixed-footer">
+  <button type="primary" bindtap="save">保存到相册</button>
+</view>
